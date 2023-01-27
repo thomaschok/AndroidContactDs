@@ -1,7 +1,5 @@
 package fr.isen.choquell.androidcontactds
 
-
-import ContactAdapter
 import activity.Contact.Api.Results
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
@@ -56,7 +54,7 @@ class DetailsContactActivity : AppCompatActivity() {
         telephoneView.text = telephone
 
         val dateView = findViewById<TextView>(R.id.dateDetailView)
-        val date = item.nat
+        val date = item.registered?.date +" "+ item.registered?.age
         dateView.text = date
     }
 

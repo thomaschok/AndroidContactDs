@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         //setContentView(R.layout.activity_main)
         actionBar?.title = "AndroidContactDS"
-        supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FF9800")))
+        supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#000000")))
 
         val layoutManager = LinearLayoutManager(applicationContext)
         binding.recyclerViewList.layoutManager = layoutManager
@@ -54,6 +54,6 @@ class MainActivity : AppCompatActivity() {
         val contactResult = Gson().fromJson(data, Model::class.java)
         val contactCategory =contactResult.results
         val adapter = binding.recyclerViewList.adapter as ContactAdapter
-        adapter.refreshList(contactCategory)
+        adapter.refreshList(contactCategory as ArrayList<Results>)
     }
 }
