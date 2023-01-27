@@ -7,50 +7,63 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="167dp"
+        android:layout_width="408dp"
+        android:layout_height="156dp"
         android:layout_margin="8dp"
         android:background="#FFC107"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/itemtextview"
             android:layout_width="107dp"
             android:layout_height="33dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="4dp"
             android:text="TextView"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/priceView"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintHorizontal_bias="0.675"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.12" />
+            app:layout_constraintVertical_bias="0.119" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="107dp"
             android:layout_height="152dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/priceView"
-            android:layout_width="64dp"
-            android:layout_height="15dp"
-            android:layout_marginBottom="68dp"
+            android:id="@+id/emailView"
+            android:layout_width="214dp"
+            android:layout_height="18dp"
             android:text="TextView"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.517"
-            app:layout_constraintStart_toEndOf="@+id/imageView" />
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/adresseView" />
+
+        <TextView
+            android:id="@+id/adresseView"
+            android:layout_width="229dp"
+            android:layout_height="40dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/itemtextview"
+            app:layout_constraintVertical_bias="0.179" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
